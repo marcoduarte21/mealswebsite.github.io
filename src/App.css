@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+header{
+    display: flex;
+    gap: 33.3333%;
+    box-shadow: 1px 1px 10px #899590;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid #F2F1EC;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header a, header h1{
+    font-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1{
+    color: #FA6202;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header a{
+    color: #4F5252;
 }
 
-.App-link {
-  color: #61dafb;
+section .favoritesRecipes{
+    display: flex;
+    height: 100px;
+    background-color: #F0FDF8;
+   align-items: center;
+   text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.favoritesRecipes h6{
+    color: #4C4B48;
+}
+
+.favoritesRecipes .image{
+    margin: 8px;
+}
+
+.favoritesRecipes .first-image{
+    margin-left: 20px;
+}
+
+.favoritesRecipes .image img{
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #899590;
+    overflow: hidden; /* asegura que la imagen no sobresalga del contenedor */
+}
+
+section .recipes{
+    width: 100%;
+    padding: 20px;
+}
+
+.recipes .card-recipe{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #899590;
+    margin: 15px 0;
+}
+
+.card-recipe img{
+width: 100%;
+height: 80%;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.card-recipe .description{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 50px;
+}
+
+.description button{
+    color: #4F5252;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.description h3{
+    color: #4C4B48;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.gold{
+    color: gold;
+}
+
+@media only screen and (width >= 768px){
+
+    .recipes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .recipes .card-recipe{
+        width: 45%;
+        margin: 15px 10px;
+    }
+
+}
+
+@media only screen and (width > 1024px){
+
+    .recipes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .recipes .card-recipe{
+        width: 31%;
+        margin: 15px 10px;
+    }
+
 }

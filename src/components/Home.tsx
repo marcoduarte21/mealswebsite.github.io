@@ -1,0 +1,60 @@
+import { Header } from "./Header"
+import { Recipes } from "./Recipes"
+import { CardRecipe } from "./CardRecipe"
+import  FavoritesRecipes  from "./FavoriteRecipes"
+import {FavoriteRecipe} from "./FavoriteRecipe"
+import arrozConLeche from '../assets/img/arroz-con-leche.jpg'
+import cordonBlue from '../assets/img/cordon-blue.jpg'
+import galloPinto from '../assets/img/gallo-pinto.jpg'
+import pastaConCamarones from '../assets/img/pasta-camarones.jpg'
+import tamal from '../assets/img/tamal.avif'
+import { Helmet } from "react-helmet"
+
+interface HomeProps{
+
+}
+
+export const Home: React.FC<HomeProps> = ({}) =>{
+
+    const recipes = [
+        {
+            name: 'Arroz con leche',
+            img: arrozConLeche
+        },
+        {
+            name: 'Cordon Blue',
+            img: cordonBlue
+        },
+        {
+            name: 'Tamal',
+            img: tamal
+        },
+        {
+            name: 'Gallo pinto',
+            img: galloPinto        },
+        {
+            name: 'Pasta con Camarones',
+            img: pastaConCamarones
+        }
+
+    ];
+
+    return (
+        <div className="container">
+            <Helmet>
+                <title>allrecipes</title>
+            </Helmet>
+        <Header />
+        <FavoritesRecipes>
+            {recipes.map(recipe => 
+            <FavoriteRecipe name={recipe.name} alt={recipe.name} img={recipe.img}/>
+                                    )}
+        </FavoritesRecipes>
+        <Recipes>
+            {recipes.map(recipe => 
+            <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img}/>
+                    )}
+        </Recipes>
+        </div>
+    )
+}
