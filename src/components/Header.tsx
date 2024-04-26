@@ -1,5 +1,3 @@
-import 'https://kit.fontawesome.com/9aac1473ee.js'
-
 interface HeaderProps{
 
 }

@@ -9,6 +9,7 @@ import galloPinto from '../assets/img/gallo-pinto.jpg'
 import pastaConCamarones from '../assets/img/pasta-camarones.jpg'
 import tamal from '../assets/img/tamal.avif'
 import { Helmet } from "react-helmet"
+import 'https://kit.fontawesome.com/9aac1473ee.js'
 
 interface HomeProps{
 
