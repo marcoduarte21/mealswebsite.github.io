@@ -8,14 +8,18 @@ import cordonBlue from '../assets/img/cordon-blue.jpg'
 import galloPinto from '../assets/img/gallo-pinto.jpg'
 import pastaConCamarones from '../assets/img/pasta-camarones.jpg'
 import tamal from '../assets/img/tamal.avif'
-import { Helmet } from "react-helmet"
 import 'https://kit.fontawesome.com/9aac1473ee.js'
+import { useEffect } from "react"
 
 interface HomeProps{
 
 }
 
 export const Home: React.FC<HomeProps> = ({}) =>{
+
+    useEffect(()=>{
+        document.title = "allrecipes";
+    },[])
 
     const recipes = [
         {
@@ -47,9 +51,6 @@ export const Home: React.FC<HomeProps> = ({}) =>{
 
     return (
         <div className="container">
-            <Helmet>
-                <title>allrecipes</title>
-            </Helmet>
         <Header />
         <FavoritesRecipes>
             {recipes.map(recipe => 
