@@ -4,12 +4,13 @@
     box-sizing: border-box;
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
 header{
     display: flex;
     gap: 33.3333%;
     box-shadow: 1px 1px 10px #899590;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     border-bottom: 2px solid #F2F1EC;
 }
@@ -28,10 +29,13 @@ header a{
 
 section .favoritesRecipes{
     display: flex;
-    height: 100px;
+    height: 110px;
     background-color: #F0FDF8;
-   align-items: center;
-   text-align: center;
+    text-align: center;
+   align-items:center;
+   overflow-x: scroll;
+   scrollbar-width: thin;
+   padding: 20px 0;
 }
 
 .favoritesRecipes h6{
@@ -39,15 +43,12 @@ section .favoritesRecipes{
 }
 
 .favoritesRecipes .image{
-    margin: 8px;
-}
-
-.favoritesRecipes .first-image{
-    margin-left: 20px;
+    padding: 5px;
 }
 
 .favoritesRecipes .image img{
-    width: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px #899590;
     overflow: hidden; /* asegura que la imagen no sobresalga del contenedor */
@@ -55,7 +56,7 @@ section .favoritesRecipes{
 
 section .recipes{
     width: 100%;
-    padding: 20px;
+    padding: 30px;
 }
 
 .recipes .card-recipe{
@@ -107,6 +108,8 @@ a{
     .recipes{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+
     }
 
     .recipes .card-recipe{
