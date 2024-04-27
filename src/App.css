@@ -43,12 +43,12 @@ section .favoritesRecipes{
 }
 
 .favoritesRecipes .image{
-    padding: 5px;
+    margin: 8px;
 }
 
 .favoritesRecipes .image img{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px #899590;
     overflow: hidden; /* asegura que la imagen no sobresalga del contenedor */
