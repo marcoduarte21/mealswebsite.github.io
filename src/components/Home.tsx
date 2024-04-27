@@ -53,14 +53,14 @@ export const Home: React.FC<HomeProps> = ({}) =>{
         <Header />
         <FavoritesRecipes>
             {recipes.map(recipe => 
-            <div key={recipe.id}>
+            <div className="image" key={recipe.id}>
             <FavoriteRecipe name={recipe.name} alt={recipe.name} img={recipe.img}/>
             </div>
                                     )}
         </FavoritesRecipes>
         <Recipes>
             {recipes.map(recipe =>
-            <div key={recipe.id}>
+            <div className="card-recipe" key={recipe.id}>
             <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.id}/>
             </div>
                     )}

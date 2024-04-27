@@ -7,7 +7,6 @@ interface CardRecipeProps{
 export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
 
     return(
-        <div className="card-recipe">
                 <a href="#">
                 <img src={img} alt={alt} />
             <div className="description">
@@ -15,6 +14,5 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
                 <button className="favorite"><i className="fa-regular fa-star"></i></button>
             </div>
                 </a>
-        </div>
     )
 }
