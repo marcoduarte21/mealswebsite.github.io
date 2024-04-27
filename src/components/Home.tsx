@@ -34,7 +34,7 @@ export const Home: React.FC<HomeProps> = ({}) =>{
             name: 'Gallo pinto',
             img: galloPinto        },
         {
-            name: 'Pasta con Camarones',
+            name: 'Pasta',
             img: pastaConCamarones
         }
 
