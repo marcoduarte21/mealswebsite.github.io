@@ -19,21 +19,26 @@ export const Home: React.FC<HomeProps> = ({}) =>{
 
     const recipes = [
         {
+            id: 1,
             name: 'Arroz con leche',
             img: arrozConLeche
         },
         {
+            id: 2,
             name: 'Cordon Blue',
             img: cordonBlue
         },
         {
+            id: 3,
             name: 'Tamal',
             img: tamal
         },
         {
+            id: 4,
             name: 'Gallo pinto',
             img: galloPinto        },
         {
+            id: 5,
             name: 'Pasta',
             img: pastaConCamarones
         }
@@ -48,12 +53,16 @@ export const Home: React.FC<HomeProps> = ({}) =>{
         <Header />
         <FavoritesRecipes>
             {recipes.map(recipe => 
-            <FavoriteRecipe name={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.name}/>
+            <div key={recipe.id}>
+            <FavoriteRecipe name={recipe.name} alt={recipe.name} img={recipe.img}/>
+            </div>
                                     )}
         </FavoritesRecipes>
         <Recipes>
-            {recipes.map(recipe => 
-            <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.name}/>
+            {recipes.map(recipe =>
+            <div key={recipe.id}>
+            <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.id}/>
+            </div>
                     )}
         </Recipes>
         </div>

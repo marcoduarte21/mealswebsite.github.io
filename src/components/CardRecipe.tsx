@@ -2,13 +2,12 @@ interface CardRecipeProps{
  img: string;
  alt: string;
  title: string;
- key: string;
 }
 
-export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title, key}) =>{
+export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
 
     return(
-        <div className="card-recipe" key={key}>
+        <div className="card-recipe">
                 <a href="#">
                 <img src={img} alt={alt} />
             <div className="description">
