@@ -7,13 +7,14 @@
 
 header{
     display: flex;
-    gap: 33.3333%;
     box-shadow: 1px 1px 10px #899590;
-    padding: 20px;
-    justify-content: space-around;
+    align-items: center;
     width: 100%;
     border-bottom: 2px solid #F2F1EC;
-    height: 70px}
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 30px;
+}
 
 header a, header h1{
     font-size: 20px;
@@ -28,7 +29,7 @@ header a{
 }
 
 section .favoritesRecipes{
-    height: 145px;
+    height: 158px;
     background-color: #F0FDF8;
     overflow-x: scroll;
    scrollbar-width: thin;
@@ -43,8 +44,8 @@ section .favoritesRecipes{
 }
 
 .favoritesRecipes .image img{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px #899590;
     overflow: hidden; /* asegura que la imagen no sobresalga del contenedor */
@@ -55,7 +56,7 @@ section .favoritesRecipes{
     text-align: center;
    align-items:center;
    padding: 20px 0;
-   margin-left: 10px;
+   margin-left: 15px;
 }
 
 section .recipes{
@@ -88,15 +89,15 @@ overflow: hidden;
 
 .description button{
     color: #4F5252;
-    font-size: 20px;
+    font-size: 23px;
     border: none;
     background-color: white;
     cursor: pointer;
 }
 
 .description h3{
-    color: #4C4B48;
-    font-size: 20px;
+    color: #303030;
+    font-size: 18px;
 }
 
 a{
@@ -124,6 +125,10 @@ a{
 }
 
 @media only screen and (width > 1024px){
+
+    header{
+        padding: 0 60px;
+    }
 
     .recipes{
         display: flex;

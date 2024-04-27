@@ -48,12 +48,12 @@ export const Home: React.FC<HomeProps> = ({}) =>{
         <Header />
         <FavoritesRecipes>
             {recipes.map(recipe => 
-            <FavoriteRecipe name={recipe.name} alt={recipe.name} img={recipe.img}/>
+            <FavoriteRecipe name={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.name}/>
                                     )}
         </FavoritesRecipes>
         <Recipes>
             {recipes.map(recipe => 
-            <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img}/>
+            <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.name}/>
                     )}
         </Recipes>
         </div>
