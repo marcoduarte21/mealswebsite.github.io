@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mealswebsite/static/css/main.203de635.css",
-    "main.js": "/mealswebsite/static/js/main.40b29f40.js",
-    "static/js/453.4d3de788.chunk.js": "/mealswebsite/static/js/453.4d3de788.chunk.js",
+    "main.js": "/mealswebsite/static/js/main.413b72a0.js",
+    "static/js/453.ed3b3cd9.chunk.js": "/mealswebsite/static/js/453.ed3b3cd9.chunk.js",
     "static/media/pasta-camarones.jpg": "/mealswebsite/static/media/pasta-camarones.c7085e876353b8b3bbd3.jpg",
     "static/media/cordon-blue.jpg": "/mealswebsite/static/media/cordon-blue.78a5dd0f4ee40cf2e0e2.jpg",
     "static/media/tamal.avif": "/mealswebsite/static/media/tamal.02339c1849f9449e4d69.avif",
@@ -10,11 +10,11 @@
     "static/media/arroz-con-leche.jpg": "/mealswebsite/static/media/arroz-con-leche.aefd7ef64bbc70cec103.jpg",
     "index.html": "/mealswebsite/index.html",
     "main.203de635.css.map": "/mealswebsite/static/css/main.203de635.css.map",
-    "main.40b29f40.js.map": "/mealswebsite/static/js/main.40b29f40.js.map",
-    "453.4d3de788.chunk.js.map": "/mealswebsite/static/js/453.4d3de788.chunk.js.map"
+    "main.413b72a0.js.map": "/mealswebsite/static/js/main.413b72a0.js.map",
+    "453.ed3b3cd9.chunk.js.map": "/mealswebsite/static/js/453.ed3b3cd9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.203de635.css",
-    "static/js/main.40b29f40.js"
+    "static/js/main.413b72a0.js"
   ]
 }
