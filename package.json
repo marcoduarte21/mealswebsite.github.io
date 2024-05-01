@@ -1,6 +1,6 @@
 {
   "homepage":"http://marcoduarte21/mealswebsite",
-  "name": "mealwebsite",
+  "name": "mealswebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
