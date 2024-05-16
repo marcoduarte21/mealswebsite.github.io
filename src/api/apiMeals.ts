@@ -8,3 +8,8 @@ export const getMealsByFirstLetter = async(letter: string) => {
 
     return axios.get<Recipe []>(`${API}search.php?f=${letter}`);
 }
+
+export const getRecipeofTheDay = async() =>{
+
+    return axios.get<Recipe>(`${API}random.php`);
+}
