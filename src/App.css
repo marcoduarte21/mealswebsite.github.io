@@ -30,7 +30,7 @@ header a{
 
 section .favoritesRecipes{
     display: grid;
-    height: 173px;
+    height: 195px;
     background-color: #F0FDF8;
     overflow-x: scroll;
    scrollbar-width: thin;
@@ -114,6 +114,22 @@ a{
     color: gold;
 }
 
+#titleRecipe{
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    border: 1px solid #FF8104;
+    border-radius: 10px;
+    background-color: #FF8104;
+    color: white;
+    padding: 10px;
+
+}
+
+.titleContainers{
+    color: #FF8102;
+}
+
 @media only screen and (width >= 768px){
 
     .recipes{
@@ -130,15 +146,6 @@ a{
 
 }
 
-#probar{
-    position: absolute;
-    top: 300px;
-    left: 20px;
-    border: 1px solid #899590;
-    background-color: #899590;
-    padding: 10px;
-
-}
 
 @media only screen and (width > 1024px){
 
