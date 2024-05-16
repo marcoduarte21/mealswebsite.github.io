@@ -29,7 +29,8 @@ header a{
 }
 
 section .favoritesRecipes{
-    height: 158px;
+    display: grid;
+    height: 173px;
     background-color: #F0FDF8;
     overflow-x: scroll;
    scrollbar-width: thin;
@@ -44,11 +45,12 @@ section .favoritesRecipes{
 }
 
 .favoritesRecipes .image img{
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     box-shadow: 1px 1px 10px #899590;
-    overflow: hidden; /* asegura que la imagen no sobresalga del contenedor */
+    overflow: hidden;
+    border: 3px solid white;
 }
 
 .container-favorites{
