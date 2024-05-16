@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface FavoriteRecipeProps{
     alt: string;
     img: string;
@@ -7,9 +9,9 @@ interface FavoriteRecipeProps{
 export const FavoriteRecipe: React.FC<FavoriteRecipeProps> = ({alt, img, name}) =>{
 
     return(
-                    <a href="#">
+                    <Link to={"#"}>
                     <img src={img} alt={alt} />
                     <h6>{name}</h6>
-                    </a>
+                    </Link>
     )
 }

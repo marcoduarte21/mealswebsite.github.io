@@ -9,7 +9,10 @@ import galloPinto from '../assets/img/gallo-pinto.jpg'
 import pastaConCamarones from '../assets/img/pasta-camarones.jpg'
 import tamal from '../assets/img/tamal.avif'
 import 'https://kit.fontawesome.com/9aac1473ee.js'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import { Recipe } from "../models/Recipe"
+import { AxiosResponse } from 'axios';
+import * as apiMeals from '../api/apiMeals'
 
 interface HomeProps{
 
@@ -17,9 +20,22 @@ interface HomeProps{
 
 export const Home: React.FC<HomeProps> = ({}) =>{
 
+    const[ListRecipes, setListRecipes] = useState<Recipe []> ([]);
+
     useEffect(()=>{
         document.title = "allrecipes";
+        getListRecipes();
     },[])
+
+    const getListRecipes = async() =>{
+
+        try{
+            const response: AxiosResponse = await apiMeals.getMealsByFirstLetter("b");
+            setListRecipes(response.data.meals);
+        } catch (error){
+            console.log(error);
+        }
+    }
 
     const recipes = [
         {
@@ -51,6 +67,7 @@ export const Home: React.FC<HomeProps> = ({}) =>{
 
     return (
         <div className="container">
+        <h4 id="probar">recipe of the day</h4>
         <Header />
         <FavoritesRecipes>
             {recipes.map(recipe => 
@@ -60,9 +77,9 @@ export const Home: React.FC<HomeProps> = ({}) =>{
                                     )}
         </FavoritesRecipes>
         <Recipes>
-            {recipes.map(recipe =>
-            <div className="card-recipe" key={recipe.id}>
-            <CardRecipe title={recipe.name} alt={recipe.name} img={recipe.img} key={recipe.id}/>
+            {ListRecipes.map(recipe =>
+            <div className="card-recipe" key={recipe.idMeal}>
+            <CardRecipe title={recipe.strMeal} alt={recipe.strMeal} img={recipe.strMealThumb}/>
             </div>
                     )}
         </Recipes>
