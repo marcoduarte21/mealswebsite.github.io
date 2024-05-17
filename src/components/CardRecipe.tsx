@@ -10,7 +10,6 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
 
     function handleClick(e:any){
 
-
             if (e.target.classList.contains('fa-regular')) {
                 e.target.classList.remove('fa-regular');
                 e.target.classList.add('fa-solid');
@@ -23,10 +22,10 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
     return(
                 <Link to={"#"}>
                 <img src={img} alt={alt} />
-            <div className="description">
-                <h3>{title}</h3>
-                <i onClick={handleClick} id="starIcon" className="fa-regular fa-star"></i>
-            </div>
+                    <div className="description">
+                        <h3>{title}</h3>
+                        <i onClick={handleClick} id="starIcon" className="fa-regular fa-star"></i>
+                    </div>
                 </Link>
     )
 }
