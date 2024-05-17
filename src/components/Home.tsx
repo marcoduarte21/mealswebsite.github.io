@@ -12,7 +12,7 @@ import tamal from '../assets/img/tamal.avif'
 import 'https://kit.fontawesome.com/9aac1473ee.js'
 import { useEffect, useState } from "react"
 import { Recipe } from "../models/Recipe"
-import { Axios, AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import * as apiMeals from '../api/apiMeals'
 
 interface HomeProps{
