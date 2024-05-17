@@ -51,6 +51,7 @@ section .favoritesRecipes{
     box-shadow: 1px 1px 10px #899590;
     overflow: hidden;
     border: 3px solid white;
+    transition: all ease 300ms;
 }
 
 .container-favorites{
@@ -92,8 +93,8 @@ overflow: hidden;
     height: 50px;
 }
 
-.description .stars button{
-    color: #4F5252;
+.description i{
+    color: orangered;
     font-size: 20px;
     border: none;
     background-color: white;
@@ -135,6 +136,7 @@ a{
 .favoritesRecipes .image img:hover{
     border: 1px solid #FF8102;
     box-shadow: 1px 1px 20px #FA6202;
+    transform: scale(1.1);
 
 }
 
@@ -183,6 +185,7 @@ header #navBar{
     text-decoration: none;
     list-style: none;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .sidebar li a{
@@ -301,10 +304,20 @@ nav ul li a{
     color: #4F5252;
     font-weight: bold;
     font-size: 17px;
+    
+}
+
+nav ul li{
+    transition: all ease 300ms;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
 }
 
 nav ul li a:hover{
     color: #FA6202;
+    
 }
 
 }
