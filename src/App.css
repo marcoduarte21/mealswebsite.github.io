@@ -182,7 +182,7 @@ header #navBar{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidebar li a{
