@@ -15,10 +15,6 @@ export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
                 <h3>{title}</h3>
                 <div className="stars">
                 <button className="favorite"><i className="fa-regular fa-star"></i></button>
-                <button className="favorite"><i className="fa-regular fa-star"></i></button>
-                <button className="favorite"><i className="fa-regular fa-star"></i></button>
-                <button className="favorite"><i className="fa-regular fa-star"></i></button>
-                <button className="favorite"><i className="fa-regular fa-star"></i></button>
             </div>
             </div>
                 </Link>
