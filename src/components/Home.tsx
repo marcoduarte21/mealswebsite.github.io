@@ -90,14 +90,14 @@ export const Home: React.FC<HomeProps> = ({}) =>{
 
         <RecipeOfTheDay>
         <div className="card-recipe">
-            <CardRecipe title={recipeOfTheDay.strMeal} alt={recipeOfTheDay.strMeal} img={recipeOfTheDay.strMealThumb}/>
+            <CardRecipe title={recipeOfTheDay.strMeal} alt={recipeOfTheDay.strMeal} img={recipeOfTheDay.strMealThumb} id={recipeOfTheDay.idMeal}/>
             </div>
         </RecipeOfTheDay>
 
         <Recipes>
             {ListRecipes.map(recipe =>
             <div className="card-recipe" key={recipe.idMeal}>
-            <CardRecipe title={recipe.strMeal} alt={recipe.strMeal} img={recipe.strMealThumb}/>
+            <CardRecipe title={recipe.strMeal} alt={recipe.strMeal} img={recipe.strMealThumb} id={recipe.idMeal}/>
             </div>
                     )}
         </Recipes>

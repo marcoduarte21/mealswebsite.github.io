@@ -4,9 +4,10 @@ interface CardRecipeProps{
  img: string;
  alt: string;
  title: string;
+ id: string;
 }
 
-export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title}) =>{
+export const CardRecipe: React.FC<CardRecipeProps> = ({img, alt, title, id}) =>{
 
     function handleClick(e:any){
 
